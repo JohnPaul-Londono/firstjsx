@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
+
+  const listStyle = {
+    width:"15%",
+    margin: "0px auto"
+  }
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1>Hello Dojo!</h1>
+        <h2>Things I Need To Do:</h2>
+        <ul style = {listStyle}>
+            <li>Eat</li>
+            <li>Sleep</li>
+            <li>Buy Pokemon Cards</li>
+            <li>Buy More Cards</li>
+        </ul>
     </div>
   );
 }
